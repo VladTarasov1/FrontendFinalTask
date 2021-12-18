@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>What character from Star Wars you are</title>
+    <link rel="stylesheet" href="style.css">
+	 <link rel="shortcut icon" href="img/2.jpg" type="image/x-icon">
+</head>
+<body>
+	 <div class="preloader">
+		<div class="preloader__row">
+			<div class="preloader__item"></div>
+			<div class="preloader__item"></div>
+		</div>
+	</div>
+
+    <script>
+		window.onload = function () {
+			document.body.classList.add('loaded_hiding');
+			window.setTimeout(function () {
+			document.body.classList.add('loaded');
+			document.body.classList.remove('loaded_hiding');
+			}, 3000);
+		}
+	</script>
+    <p id="num"></p>
+    <div>
+    <table class="table" id="table">
+        <tr>
+            <td><label for="a1">A</label></td>
+            <td><label for="a2">B</label></td>
+            <td><label for="a3">C</label></td>
+            <td><label for="a4">D</label></td>
+           
+        </tr>
+        <tr>
+            <td><input type="radio" name="question" id="a1"></td>
+            <td><input type="radio" name="question" id="a2"></td>
+            <td><input type="radio" name="question" id="a3"></td>
+            <td><input type="radio" name="question" id="a4"></td>
+            
+        </tr>
+    </table>
+    <button id="btn">Answer</button>
+    </div>
+    <script src="code.js"></script>
+</body>
+
+</html>
